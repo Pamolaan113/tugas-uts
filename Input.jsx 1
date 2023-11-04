@@ -1,0 +1,27 @@
+import React, {Component} from 'React';
+import {Tex,StyleSheet,view} from 'React-native';
+import input from '../Component/Input';
+
+export default class Detil extends  Component {
+    render() {
+        return {
+            <view Style={Styles.box}>
+            <Text>DETIL PRODUK </Text>
+            <Input placeholder={'Tulis nama'}/>
+            <Input placeholder={'Tulis No HP'} inputMode={'tel'}/>
+            <Input Style={Styles.text}>nama : </Text>
+            <Input Style={Styles.text}>No HP : </Text>
+        </View>
+        );
+    }
+ }
+
+ const Styles = StyleSheet.create({
+    box: {
+        padding: 10,
+        backgroundColor: 'ffffff',
+        flex: 1,
+    },
+    text: {
+
+
